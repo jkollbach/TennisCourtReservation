@@ -12,19 +12,19 @@
 	$objLimited->belowAge = 16;
 	$objLimited->maxTime = 18;
 
-	$smtpServer = "smtp.office365.com";
+	$smtpServer = "your.smtp.server";
 	$intSmtpPort = 587;
-	$eMailUser = "reservierung@tcloerzweiler.de";
-	$eMailPw = "3vV0\"ybc`%=N0i'px*t{";
-	$clubName = "Tennisclub Lörzweiler";
-	$strBaseUrl = "tennisclub-loerzweiler.de";
+	$eMailUser = "your@sender-email.com";
+	$eMailPw = "PasswordForSMTPAuth";
+	$clubName = "Your Club Name";
+	$strBaseUrl = "Your home page w/o https://";
 
 	$bCheckInMethod = true;
 
-	$srvHostname = "kollbach.dynv6.net";
+	$srvHostname = "hostname this tool is running on";
 
-	$dbUser = "svcTCourt";
-	$dbPwd = ".yPc:3/v0vGOu=~fN@pF";
+	$dbUser = "DBUser";
+	$dbPwd = "DBpassword";
 	$database = "tclCourtReserve";
 
 	$fbSerialNumner = "C80E144097E3!";

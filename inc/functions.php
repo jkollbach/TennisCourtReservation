@@ -20,7 +20,6 @@ function checkLocal()
 	// e.g. when there is a dyn dns for the local router...
 	global $srvHostname;
 	$result = checkLocalByHostname($srvHostname);
-$result = true;
 	return $result;
 }
 
