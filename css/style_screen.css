@@ -1,0 +1,524 @@
+body {
+	font-size: 62.5%; 
+	margin: 0px auto; 
+	padding: 0px; 
+	font-family: arial, sans-serif;
+}
+
+.pageContainer {
+	width: 770px; 
+	margin: auto;
+	padding: 0px;
+	border: 1px solid rgb(0,0,0);
+}
+
+.img-header {
+	clear: both; 
+	float: left; 
+	width: 770px; 
+	height: 128px; 
+	margin: 0px; 
+	padding: 0px;
+	background: url(../img/header_tcl.png) top left no-repeat; 
+}
+
+.wappen {
+	position:absolute;
+	width:770px; 
+	height:128px; 
+	background-color:transparent; 
+	z-index:102;
+}
+.wappen ul {
+	float: left; 
+	margin: 0px; 
+	padding: 4px;
+}	
+
+.wappen li {
+	display: inline; 
+	list-style: none; 
+	margin: 0px; 
+	padding: 0px;
+}
+
+.menuHoriz {
+	clear: both; 
+	margin: 0px; 
+	background-color: rgb(169,203,149); 
+	font-family: verdana, arial, sans serif; 
+	font-size: 1.0em;
+}
+
+.menuHoriz ul {
+	float: left; 
+	width: 100%; 
+	margin: 0px; 
+	padding: 0px; 
+	background-color: rgb(169,203,149); 
+	font-weight: bold;
+}
+	
+.menuHoriz li {
+	display: inline; 
+	list-style: none; 
+	margin: 0px; 
+	padding: 0px;
+}
+
+.menuHoriz li button {
+	float: left;
+	background-color: inherit;
+	color: rgb(34,150,49); 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 100%;
+	outline: none;
+	cursor: pointer;
+	padding: 5px;
+	transition: 0.3s;
+	border-style: solid;
+	border-color: rgb(255,255,255);
+	border-width: 1px;
+	font-weight: bold;
+}
+
+.menuHoriz button:hover {
+	background-color: rgb(34,150,49); 
+	color: rgb(255,255,255); 
+}
+
+.menuHoriz li a {
+	display: block; 
+	float: left; 
+	margin: 0px 0px 0px 0px; 
+	padding: 5px 10px 5px 10px; 
+	border-right: solid 1px rgb(255,255,255); 
+	color: rgb(34,150,49); 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 100%;
+}
+.menuHoriz a.selected {
+	color: rgb(255,255,0); 
+	text-decoration: none;
+}
+.menuHoriz a:hover {
+	color: rgb(255,255,0); 
+	text-decoration: none;
+}
+
+.menuHoriz li.cClock {
+	float: right; 
+	width:270px;
+	margin: 0px; 
+	padding: 0px; 
+	background-color: rgb(169,203,149); 
+	font-weight: bold;
+}
+
+.menuHoriz li span {
+	display: block; 
+	float: right; 
+	margin: 0px 0px 0px 0px; 
+	padding: 5px 10px 5px 10px; 
+	border-right: 0px; 
+	color: rgb(255,255,255); 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 100%;
+}
+
+.menuHoriz span.loggedInUser {
+	float: left;
+	display: block; 
+	margin: 0px 0px 0px 0px; 
+	padding: 5px 10px 5px 100px; 
+	border-right: 0px; 
+	color: rgb(255,255,255); 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 100%;
+}
+
+.buffer {
+	clear: both; 
+	width: 770px; 
+	height: 10px; 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+.classLogon {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	overflow: auto;
+	background-color: rgb(255,255,255);
+	border: solid 1px rgb(30,90,40);
+	padding: 20px;
+	margin: 0px 34px auto;
+}
+
+.classPwChange {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.classPlayers {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	overflow: auto;
+	background-color: rgb(255,255,255);
+	/* border: solid 1px rgb(30,90,40); */
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	width: inherit;
+}
+
+.loginForm {
+	border: 3px solid rgb(169,203,149);
+}
+
+.playerForm {
+	border: 3px solid rgb(169,203,149);
+}
+
+.classLogon input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.classLogon input[type=select] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.classLogon button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.classLogon button:hover {
+	opacity: 0.8;
+}
+
+.classPlayers button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.classPlayers button:hover {
+	opacity: 0.8;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+.classLogon img {
+	width: 120px;
+	border-radius: 50%;
+	border: solid 1px rgb(30,90,40);
+}
+
+.container {
+	padding: 16px;
+	border: solid 1px rgb(0,0,0);
+	margin: 5px;
+}
+
+.container span.schedInfo {
+	font-size: 1.5em;
+	border-left: 1px solid rgb(0,0,0);
+	padding-left: 5px;
+}
+
+.container span.manButtons {
+	display: inline;
+}
+
+.container button.btManageBookingConfirm {
+	background-color: rgb(169,203,149);
+	width: 300px;
+	margin-right: 117px;
+}
+
+.container button.btManageBookingCancel {
+	background-color: rgb(198,60,06);
+	width: 300px;
+}
+
+.playerTab {
+	padding-top: 30px;
+	width: 100%;
+}
+
+.playerTabLeft {
+	width: 15%;
+	text-align: right;
+	font-size: initial;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.playerTabRight {
+	width: 85%;
+	text-align: left;
+	font-size: initial;
+	padding-bottom: 10px;
+}
+
+.playerSelect {
+	width: inherit;
+	font-size: inherit;
+	margin-bottom: 2px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+.tabOverview {
+	padding-top: 30px;
+	width: 100%;
+	border: solid 2px rgb(0,0,0);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+.mainContent {
+	margin: 0px; 
+	padding: 0px 5px 5px 5px; 
+	color: rgb(0,0,0);
+}
+
+/* Style the tab */
+.tCourts {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tCourts button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+button.tablinks.cuseable {
+	background-color: rgb(169,203,149); 
+}
+
+/* Change background color of buttons on hover */
+.tCourts button:hover {
+	background-color: rgb(0,255,0); 
+}
+
+/* Create an active/current tablink class */
+.tCourts button.active {
+  background-color: rgb(34,150,49);
+  color: rgb(255,255,255);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.timeTableNormal {
+	width: 6rem;
+	height: 2rem;
+	border: 1px solid #ccc;
+	text-align: center;
+	background-color: rgb(0,255,0);
+}
+
+.timeTableOld {
+	width: 6rem;
+	height: 2rem;
+	border: 1px solid #ccc;
+	text-align: center;
+	background-color: rgb(241,241,241);
+}
+
+.timeTableHighlightedTimes {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+  text-align: center;
+ 	background-color: rgb(30,90,40);
+	color: rgb(255,255,255);  
+}
+
+.timeTableHighlighted {
+	width: 6rem;
+	height: 2rem;
+	border: 1px solid #fff;
+	text-align: center;
+ 	background-color: rgb(30,90,40);
+	color: rgb(255,255,255);  
+}
+
+.timeTableBooked {
+	background-color: rgb(255,0,0);
+	color: rgb(255,255,255);  
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.timeTableReserved {
+ 	background-color: rgb(255,255,0);
+	color: rgb(255,255,255);  
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.timeTableNormal button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.timeTableNormal button:hover {
+  background-color: rgb(30,90,40);
+}
+.timeTableNormal button.active {
+  background-color: rgb(169,203,149);
+}
+
+.timeTableReserved button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.timeTableBooked button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.timeTableReserved button:hover {
+  background-color: rgb(220,220,40);
+}
+
+.timeTableReserved button.active {
+  background-color: rgb(255,255,140);
+}
+
+.timeTableBooked button:hover {
+  background-color: rgb(120,20,40);
+}
+
+.timeTableBooked button.active {
+	background-color: rgb(255,140,140);
+}
+
+.warnHead {
+	font-size: x-large;
+}
+
+.warnMessage {
+	font-size: 1.5em;
+}
+
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
