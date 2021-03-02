@@ -44,19 +44,7 @@ CREATE TABLE `tActiveUsers` (
 --
 
 INSERT INTO `tActiveUsers` (`pkid`, `fk_utype`, `timestamp`, `lastName`, `firstName`, `displayName`, `emailAddress`, `birthdate`, `pwhash`) VALUES
-(0, 1, '2021-03-01 12:14:18', 'System', 'Reservation', 'Reservation System', 'reservierung@tcloerzweiler.de', '1970-01-01', 'leer'),
-(1, 2, '2021-02-25 14:14:55', 'Natzi', 'Christoph', 'Christoph Natzi', 'christoph@natzi.de', '1976-09-09', '$2y$10$VCxlbdKMRZW6q3l8Lz0U1.sfYuQDkHeRp9PREY4vzpGinHBwDshTi'),
-(2, 2, '2021-02-19 06:25:14', 'Stickdorn', 'Claudia', 'Claudia Stickdorn', 'c-stickdorn@t-online.de', '1967-03-04', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(3, 2, '2021-02-19 06:25:14', 'Lohmüller', 'Frank', 'Frank Lohmüller', 'socke1969@googlemail.com', '1970-09-19', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(4, 2, '2021-02-26 10:34:55', 'Ghiena', 'Jean-Philippe', 'Jean-Philippe Ghiena', 'tcl.jugend@gmail.com', '1968-07-03', '$2y$10$36jDsYValgBg9B8D4Xx/0ekUwTnIIqRBOPZPwEBeQaV/jy.uuI2ca'),
-(5, 2, '2021-02-19 06:25:14', 'Bisch', 'Brigitte', 'Brigitte Bisch', 'Bisch.B@medi-cine.de', '1965-03-12', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(6, 2, '2021-02-19 06:25:14', 'Rossa', 'Sven', 'Sven Rossa', 's.rossa@web.de', '1973-04-10', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(7, 2, '2021-02-19 06:25:14', 'Klingler', 'Tanja', 'Tanja Klingler', 'tanja.klingler.loerzweiler@gmail.com', '1975-05-13', '$2y$10$r6vq2Gl/BPlpn22l2R.djeXNJikU9qvFuSYlAGX3ZVPLDh6rMtZoC'),
-(8, 2, '2021-02-19 06:25:14', 'Tester', 'Toni', 'Toni Tester', 'jkollbach@gmx.de', '2009-10-10', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(9, 2, '2021-02-19 06:25:14', 'Keller', 'Walter', 'Walter Keller', 'w.keller@viscomkeller.de', '1956-12-11', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(10, 2, '2021-02-19 06:25:14', 'Böttger', 'Wolfgang', 'Wolfgang Böttger', 'wboettger@tcloerzweiler.de', '1941-12-31', '$2y$10$LrQtYTOPBucLhkHspofBp.wEcnt.uYoLUCfZw4vzadz0G56GIfatu'),
-(11, 2, '2021-02-19 06:25:14', 'Kollbach', 'Jens', 'Jens Kollbach', 'jkollbach@tcloerzweiler.de', '1975-10-02', '$2y$10$xfmx/tTMmVHkuy/g1F7QLupsww2mCCYJUzB/nQViSxuZoueI6D4y.'),
-(12, 2, '2021-02-25 13:31:47', 'Mustermann', 'Max', 'Max Mustermann', 'jkollbach@gmail.com', '1977-10-10', '$2y$10$76P634gPnoX5yvpFkAMPI.8wZXtRXAIm9yATntUlA2/yn0JjUtBCO');
+(0, 1, '2021-03-01 12:14:18', 'System', 'Reservation', 'Reservation System', 'your@sender-email.com', '1970-01-01', 'leer');
 
 -- --------------------------------------------------------
 
@@ -156,30 +144,6 @@ CREATE TABLE `tReservations` (
 --
 -- Daten für Tabelle `tReservations`
 --
-
-INSERT INTO `tReservations` (`pkid`, `uuid`, `dtrequested`, `timestamp`, `fk_court`, `fk_requester`, `schedule`, `hour`, `duration`, `status`, `fk_player2`, `fk_player3`, `fk_player4`) VALUES
-(33, 'EFFA185B-DDDE-4494-98CC-45AE4D853B96', '2021-02-22 14:19:23', '2021-02-22 14:19:23', 1, 11, '2021-02-26', 18, 1, 5, 6, 1, NULL),
-(34, 'A0F42665-0BCD-4EFD-B843-94EA26DEE276', '2021-02-25 14:04:44', '2021-02-25 14:05:36', 1, 12, '2021-02-25', 16, 1, 0, 11, NULL, NULL),
-(35, 'E84B7CB7-0C93-4801-BBDF-C7E00E668E7D', '2021-02-25 14:05:58', '2021-02-25 14:15:28', 1, 12, '2021-02-25', 16, 1, 0, 11, NULL, NULL),
-(36, '2343A313-53EE-496A-A2F8-0CC9B8DF48CE', '2021-02-25 14:17:10', '2021-02-25 14:20:10', 1, 1, '2021-02-25', 18, 1, 0, 9, 7, NULL),
-(38, '713E7E6E-60ED-45A5-94C5-68F90F5CFECE', '2021-02-25 14:24:25', '2021-02-25 14:26:21', 1, 1, '2021-02-25', 16, 1, 0, 11, NULL, NULL),
-(39, 'CD4FB1B6-4AA2-4347-BA04-34FF713FF60A', '2021-02-25 14:28:27', '2021-02-25 15:45:24', 1, 1, '2021-02-25', 19, 1, 0, 11, NULL, NULL),
-(40, 'C9DD4D61-3105-49DD-AF50-08057FB32A49', '2021-02-25 14:43:39', '2021-02-25 14:43:39', 1, 11, '2021-02-27', 11, 1, 5, 12, NULL, NULL),
-(41, 'ADBC2BF8-4BA9-4ABD-825B-C7B547BE748C', '2021-02-25 15:46:46', '2021-02-25 15:48:13', 1, 1, '2021-02-25', 17, 1, 0, 11, NULL, NULL),
-(42, 'ED6FC28C-6E75-4942-B28F-A981CFA580BC', '2021-02-25 15:54:52', '2021-02-25 15:54:52', 1, 1, '2021-02-25', 18, 1, 5, 11, NULL, NULL),
-(43, '1DD98575-A819-47E9-82A9-3B7E1CEFE135', '2021-02-26 10:38:13', '2021-02-26 10:38:13', 1, 4, '2021-02-27', 8, 1, 5, 8, NULL, NULL),
-(44, '702EA5CE-00B3-4FBA-85D3-AC0B87BC5C81', '2021-02-26 10:38:30', '2021-02-26 10:38:30', 1, 4, '2021-02-28', 11, 1, 5, 7, NULL, NULL),
-(45, '973FBF47-05D5-4B09-805C-C4AB1E339B24', '2021-02-26 10:38:43', '2021-02-26 10:38:43', 1, 4, '2021-03-04', 13, 1, 5, 11, 3, 6),
-(46, '9C8FEBD5-1B4E-4480-B356-723A8D8353F8', '2021-02-26 10:39:31', '2021-02-26 10:39:31', 1, 4, '2021-03-03', 15, 1, 5, 12, NULL, NULL),
-(47, '95D5BD54-FAFE-4D4D-B17F-0331BE212075', '2021-02-26 19:16:10', '2021-02-27 14:28:49', 1, 11, '2021-03-03', 8, 1, 0, 8, NULL, NULL),
-(48, '93868448-EB11-403F-A309-B5465568CFC6', '2021-02-27 08:20:37', '2021-02-27 08:20:37', 1, 1, '2021-02-23', 8, 0, 10, 3, NULL, NULL),
-(49, '5438B715-3D89-441C-97B9-CD64DA8D9D98', '2021-02-27 13:15:41', '2021-03-01 09:52:10', 1, 11, '2021-03-05', 8, 1, 0, 12, NULL, NULL),
-(50, 'F9BEF6D9-F108-4EB6-B179-A8078996D83C', '2021-02-28 06:35:40', '2021-02-28 06:40:53', 1, 11, '2021-03-06', 8, 1, 0, 12, NULL, NULL),
-(51, '1ED5F8D3-5F05-42A9-BF8F-EFECEEE9DBD1', '2021-03-01 07:54:17', '2021-03-01 07:56:34', 1, 11, '2021-03-02', 8, 1, 0, 12, NULL, NULL),
-(52, 'A62C6095-44A0-40CA-90B7-D24FBD94BAA2', '2021-03-01 09:53:42', '2021-03-01 10:47:54', 1, 11, '2021-03-01', 12, 1, 10, 12, NULL, NULL),
-(53, 'CCE0D06F-2EF2-4C31-8951-B6A9E5B253C2', '2021-03-01 12:06:29', '2021-03-01 12:14:32', 1, 11, '2021-03-02', 8, 1, 0, 12, NULL, NULL),
-(54, 'A77F8E04-3269-4323-8EA9-C207840E71BE', '2021-03-01 12:37:00', '2021-03-01 12:39:00', 1, 11, '2021-03-02', 8, 1, 0, 12, NULL, NULL),
-(55, 'D2E5EB68-743A-42F3-88CB-07C09065C4A0', '2021-03-01 13:18:56', '2021-03-01 13:21:26', 1, 11, '2021-03-02', 8, 1, 0, 12, NULL, NULL);
 
 -- --------------------------------------------------------
 
