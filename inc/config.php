@@ -1,27 +1,22 @@
 <?php
-	$iEarliest = 8;
-	$iLatest = 20;
-	$iMaxDays = 7;
-	$iMaxBookingsPerDay = 1;
-	$iMaxBookingsPerWeek = 3;
-	$iInAdvanceRequired = 6;
-	$iCheckInMinutes = 45;
-
-	$objLimited = new stdClass();
-	$objLimited->enabled = false;
-	$objLimited->belowAge = 16;
-	$objLimited->maxTime = 18;
+	$iEarliest = 8; 			// first slot - start of timetable
+	$iLatest = 20;  			// latest end of slot - end of timetable
+	$iMaxDays = 7;  			// days presented on timetable - no future bookings possible
+	$iMaxBookingsPerDay = 1; 	// one player is allowed to have one booking per day
+	$iMaxBookingsPerWeek = 3; 	// one player is allowed to have max 3 bookings per day
+	$iInAdvanceRequired = 6; 	// 6 hours before event, cannot be booked remotely - so 6 hours in advance
+	$iCheckInMinutes = 45;		// 45 mins before event it is allowed to check in
+	$bCheckInMethod = true;		// if false, no check-in is required / bookings directly have the state of checked-in
 
 	$smtpServer = "your.smtp.server";
 	$intSmtpPort = 587;
 	$eMailUser = "your@sender-email.com";
 	$eMailPw = "PasswordForSMTPAuth";
 	$clubName = "Your Club Name";
-	$strBaseUrl = "Your home page w/o https://";
+	$strBaseUrl = "Your home page w/o https://";	// e.g. my-club.co.uk
 
-	$bCheckInMethod = true;
 
-	$srvHostname = "hostname this tool is running on";
+	$srvHostname = "dyndns hostname of local router";
 
 	$dbUser = "DBUser";
 	$dbPwd = "DBpassword";
