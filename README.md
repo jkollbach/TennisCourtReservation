@@ -18,6 +18,8 @@ CONFIGURATION
 ./inc/config.php keeps the configuration data, which needs to be adjusted. Hints are in the file.
 One special point: To check, wether the user is local (at the club area) or not, there has to be a specific test in place. This can be enhanced in ./inc/functions.php.
 
+!! Be sure to set permissions on config file (e.g. 600) or place it somewhere outside the web folder (then index.php has to be adjusted accordingly)
+
 There are two examples:
 1. the club owns a fritzbox and the tool is running on a server in local network, so you could check the local fritzbox mac address 
 2. the tool is running on some provider anywhere - you still need a local network, from where to check-in. If so, create a dyn-dns entry for the local network. Now the dyn-dns assigned IP and the remote address of the logged in user should be identically.
