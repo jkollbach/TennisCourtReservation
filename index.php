@@ -416,6 +416,10 @@ if ($bLoggedIn)
     						</td>
     					</tr>
     <!-- if weiterer Spieler -->
+<?php 
+							if (!$bDenyDoubles)
+							{
+?>
 							<tr>
 								<td class="playerTabLeft">
 									<label for="player3"><b><?php print db_ReadTextObject($lang,"Player"); ?> 2</b></label>
@@ -439,6 +443,9 @@ if ($bLoggedIn)
     							</select>
     						</td>
     					</tr>
+<?php
+					}
+?>
     					<tr>
     						<td colspan="2">
 									<button class="lgnButton" onclick="bookCourt()"><?php print db_ReadTextObject($lang,"Continue"); ?></button>
