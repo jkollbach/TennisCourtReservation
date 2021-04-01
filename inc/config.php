@@ -7,6 +7,7 @@
 	$iInAdvanceRequired = 6; 	// 6 hours before event, cannot be booked remotely - so 6 hours in advance
 	$iCheckInMinutes = 45;		// 45 mins before event it is allowed to check in
 	$bCheckInMethod = true;		// if false, no check-in is required / bookings directly have the state of checked-in
+	$bDenyDoubles = false;		// in times of Corona, doubles might not be allowed
 
 	$smtpServer = "your.smtp.server";
 	$intSmtpPort = 587;
